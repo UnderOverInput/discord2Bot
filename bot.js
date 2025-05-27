@@ -22,6 +22,7 @@ client.on('ready', () => {
 });
 
 client.on('messageCreate', async (message) => {
+  console.log(`[DEBUG] Message received from ${message.author.tag}: ${message.content}`);
   if (message.author.bot) return;
 
  try {
