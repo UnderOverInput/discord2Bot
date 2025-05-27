@@ -24,23 +24,22 @@ client.on('ready', () => {
 client.on('messageCreate', async (message) => {
   if (message.author.bot) return;
 
-  try {
-    const content = message.content;
-
-    const { error } = await supabase.from('messages').insert([{
+ try {
+  const { data, error } = await supabase.from('messages').insert([
+    {
       username: message.author.tag,
       message: content,
-      channel: message.channel.name
-    }]);
-
-    if (error) {
-      console.error('Supabase insert error:', error.message);
-    } else {
-      console.log(`[Logged] ${message.author.tag}: ${content}`);
+      channel: message.channel.name,
     }
-  } catch (err) {
-    console.error('Insert failed:', err.message);
+  ]);
+  if (error) {
+    console.error('Supabase insert error:', error);
+  } else {
+    console.log('Supabase insert success:', data);
   }
+} catch (err) {
+  console.error('Unexpected error:', err);
+}
 });
 
 client.login(process.env.DISCORD_TOKEN);
