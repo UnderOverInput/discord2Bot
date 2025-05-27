@@ -47,14 +47,14 @@ Return JSON:
     const result = JSON.parse(response.data.choices[0].message.content);
 
     await supabase.from('messages').insert([{
-      user: message.author.tag,
-      message: content,
-      channel: message.channel.name,
-      sentiment: result.sentiment,
-      tone: result.tone,
-      category: result.category,
-      tokens: result.tokens
-    }]);
+  username: message.author.tag,   // instead of user
+  message: content,
+  channel: message.channel.name,
+  sentiment: result.sentiment,
+  tone: result.tone,
+  category: result.category,
+  tokens: result.tokens
+}]);
 
     console.log(`[Logged] ${message.author.tag}: ${result.category} | ${result.sentiment}`);
   } catch (err) {
