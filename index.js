@@ -19,7 +19,7 @@ async function testSupabaseConnection() {
   try {
     // First check if we can connect
     const { data, error } = await supabase
-      .from('messages')
+      .from('discord_messages2')
       .select('count')
       .limit(1);
     
@@ -33,7 +33,7 @@ async function testSupabaseConnection() {
 
     // Now check the table structure
     const { data: tableInfo, error: tableError } = await supabase
-      .from('messages')
+      .from('discord_messages2')
       .select('*')
       .limit(1);
 
@@ -48,7 +48,7 @@ async function testSupabaseConnection() {
       console.log('Available columns:', columns.join(', '));
       
       // Compare with our insert structure
-      const ourColumns = ['user_id', 'channel', 'content', 'created_at', 'server_id', 'server_name'];
+      const ourColumns = ['user_id', 'channel', 'message', 'created_at', 'server_id', 'server_name'];
       console.log('\nOur insert columns:', ourColumns.join(', '));
       
       const missingColumns = ourColumns.filter(col => !columns.includes(col));
