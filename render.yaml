@@ -2,8 +2,9 @@ services:
   - type: web
     name: discord-supabase-bot
     env: node
+    plan: free
     buildCommand: npm install
-    startCommand: npm start
+    startCommand: node index.js
     envVars:
       - key: DISCORD_TOKEN
         sync: false
@@ -16,4 +17,6 @@ services:
       - key: TARGET_CHANNEL_IDS
         sync: false
       - key: TARGET_USER_IDS
-        sync: false 
+        sync: false
+    healthCheckPath: /
+    autoDeploy: true 
