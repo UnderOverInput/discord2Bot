@@ -1,0 +1,7 @@
+
+==================================================
+Email: snicks-03-carver@icloud.com
+Password: )H6_M7y5mAQf
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhdXRoMHx1c2VyXzAxSlc5V01WQVlUQ0taUDlDQVBFWkY1UUEzIiwidGltZSI6IjE3NDgzODM3NzQiLCJyYW5kb21uZXNzIjoiYjc1ZDUzODUtYzA2Ny00MjlmIiwiZXhwIjoxNzUzNTY3Nzc0LCJpc3MiOiJodHRwczovL2F1dGhlbnRpY2F0aW9uLmN1cnNvci5zaCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwgb2ZmbGluZV9hY2Nlc3MiLCJhdWQiOiJodHRwczovL2N1cnNvci5jb20iLCJ0eXBlIjoic2Vzc2lvbiJ9.G7kj25FnTbaFXPTrpZ2DFYq-srZGkVI4jFB31RZnYdY
+Usage Limit: 未知
+==================================================
