@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: discord-supabase-bot
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_KEY
+        sync: false
+      - key: XAI_API_KEY
+        sync: false
+      - key: TARGET_CHANNEL_IDS
+        sync: false
+      - key: TARGET_USER_IDS
+        sync: false 
