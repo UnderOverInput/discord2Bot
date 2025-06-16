@@ -1,28 +1,28 @@
-# Discord Bot with Grok AI and Supabase
+# Discord Bot for Render
 
-## 🛠 Setup
+## Setup
 
 1. Install dependencies:
+
 ```bash
 npm install
 ```
 
-2. Create a `.env` file using `.env.example`:
+2. Create a `.env` file from `.env.example`:
+
 ```
-DISCORD_TOKEN=
-SUPABASE_URL=
-SUPABASE_ANON_KEY=
-XAI_API_KEY=
+DISCORD_TOKEN=your_discord_bot_token_here
 ```
 
 3. Start the bot locally:
+
 ```bash
 npm start
 ```
 
-## 🚀 Deploy to Render
+## Deploy to Render
 
-1. Push this project to GitHub.
-2. Create a Render Background Worker.
-3. Set your environment variables in the Render dashboard.
-4. Use `node bot.js` as the start command.
+1. Push to GitHub.
+2. Create a "Background Worker" on Render.
+3. Set start command: `node bot.js`.
+4. Add your `DISCORD_TOKEN` in the environment variables.
